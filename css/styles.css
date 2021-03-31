@@ -27,8 +27,8 @@ h2,
 h3,
 h4,
 h5,
-h6,
-p {
+h6
+ {
   margin-top: 0%;
   margin-bottom: 0%;
 }
@@ -94,7 +94,7 @@ ul {
   
 }
 
-.item {
+.main-list .item {
   width: 270px;
   margin-right: 30px;
 }
@@ -103,11 +103,15 @@ ul {
   display: block;
   content:"";
   height: 120px;
-  background-size: contain;
+  margin-bottom: 30px;
+  background-size: 70px;
   background-repeat: no-repeat;
   background-position: center;
   background-color: #F5F4FA;
-  outline: 1px solid  brown;
+}
+
+.main-list .item:last-child {
+  margin-right: 0%;
 }
 
 .icon-antenna::before{
@@ -126,6 +130,11 @@ ul {
   background-image: url(../imeges/astronaut\ 1.svg);
 }
 
+.main-text {
+  display: inline-block;
+  width: 270px;
+}
+
 .contact-nav a {
   font-weight: 500;
   font-size: 14px;
@@ -135,14 +144,17 @@ ul {
   color: var(--main-text-color);
 }
 
-.contact-item {
-  display: flex;
-  margin-left: auto;
+.contact-nav .link {
   padding-top: 32px;
   padding-bottom: 32px;
 }
 
-.contact-nav .item +.item {
+.contact-nav.flex {
+  display: flex;
+  margin-left: auto;
+}
+
+.contact-nav .item-nav +.item-nav {
   margin-left: 50px;
 }
 
@@ -165,7 +177,7 @@ ul {
   max-width: 100%;
 }
 
-.list-nav .item +.item {
+.list-nav .item-nav +.item-nav {
   margin-left: 50px;
 } 
 
@@ -203,14 +215,9 @@ ul {
 
 /* main section */
 .section {
-  height: 600px;
-  max-width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+ 
   text-align: center;
 
   background-image: linear-gradient(
@@ -273,10 +280,7 @@ ul {
 .section-command {
   padding-top: 94px;
   padding-bottom: 94px;
-  padding-left: 15px;
-  padding-right: 15px;
   background-color: var(--button-color);
-
 }
 
 .title-command {
@@ -311,7 +315,6 @@ ul {
 }
 
 .main-title {
-  margin-top: 0%;
   margin-bottom: 10px;
 
   font-weight: 700;
@@ -426,15 +429,8 @@ button {
 .footer-list .logo {
   display: block;
   width: 145px;
-  padding-top: 60px;
   margin-bottom: 20px;
 }
-
-/*.footer-color .container {
-  display: block;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}*/
 
 .contact-nav-color  {
   font-size: 14px;
@@ -443,16 +439,10 @@ button {
   color: var(--bg-color);
 }
 
-/*.contakt-nav .link-footer {
-  display: block;
-  padding-top: 9px;
-  
-}*/
-
-
 .addres-footer {
   width: 231px;
   display: block;
+
 }
 
 
@@ -472,6 +462,8 @@ button {
   width: 1200px;
   padding-top: 94px;
   padding-bottom: 94px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
