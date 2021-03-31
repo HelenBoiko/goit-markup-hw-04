@@ -301,7 +301,6 @@ ul {
 .link-command {
   width: 270px;
   margin-right: 30px;
-  margin-bottom: 94px;
 }
 
 .link-command:last-child {
@@ -454,8 +453,6 @@ button {
 .addres-footer {
   width: 231px;
   display: block;
-  padding-top: 9px;
-  padding-bottom: 60px;
 }
 
 
