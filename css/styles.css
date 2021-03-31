@@ -111,19 +111,19 @@ ul {
 }
 
 .icon-antenna::before{
-  background-image: url(../imeges/Group\ 1.svg);
+  background-image: url(../imeges/antenna\ 1.svg);
 }
 
 .icon-clock::before{
-  background-image: url(../imeges/Group\ 2.svg);
+  background-image: url(../imeges/clock\ 1.svg);
 }
 
 .icon-diagram::before{
-  background-image: url(../imeges/astronaut\ 1.svg);
+  background-image: url(../imeges/diagram\ 1.svg);
 }
 
 .icon-astronaut::before{
-  background-image: url(../imeges/diagram\ 1.svg);
+  background-image: url(../imeges/astronaut\ 1.svg);
 }
 
 .contact-nav a {
