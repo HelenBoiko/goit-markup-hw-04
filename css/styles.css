@@ -410,6 +410,7 @@ ul {
 button {
   cursor: pointer;
   padding: 6px 22px;
+  border: none;
 }
 
 .list-button .item-button {
@@ -427,6 +428,8 @@ button {
   display: flex;
   margin-right: 8px;
   margin-bottom: 50px;
+  border-radius: 6px;
+  box-shadow: 0 10px 10px -5px rgb(0 0 0 / 30%);
   border: 1px solid transparent;
 
 }
