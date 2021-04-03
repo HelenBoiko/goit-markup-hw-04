@@ -27,7 +27,8 @@ h2,
 h3,
 h4,
 h5,
-h6
+h6,
+p
  {
   margin-top: 0%;
   margin-bottom: 0%;
@@ -73,6 +74,7 @@ ul {
   width: 1200px;
   margin-left:  auto;
   margin-right: auto;
+  padding: 0 15px;
 }
 
 .header {
@@ -145,6 +147,7 @@ ul {
 }
 
 .contact-nav .link {
+  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -157,6 +160,29 @@ ul {
 .contact-nav .item-nav +.item-nav {
   margin-left: 50px;
 }
+
+.icon-mail::before {
+  content:"";
+  display: inline-block;
+  width: 16px;
+  height: 12px;
+  background-image: url();
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-tel::before {
+  content:"";
+  display: inline-block;
+  width: 10px;
+  height: 16px;
+  background-image: url();
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 
 .list-nav a {
   display: block;
@@ -305,13 +331,20 @@ ul {
 .link-command {
   width: 270px;
   margin-right: 30px;
+  border-radius: 4px;
+  box-shadow: 0 10px 10px -5px 
+  rgba(0,0,0,0.3);
+
+  background-color: var(--bg-color);
 }
 
 .link-command:last-child {
   margin-right: 0%;
 }
- .img-command {
-  margin-bottom: 30px;
+ 
+
+.command-box {
+  padding: 30px 32px;
 }
 
 .main-title {
@@ -376,6 +409,7 @@ ul {
 
 button {
   cursor: pointer;
+  padding: 6px 22px;
 }
 
 .list-button .item-button {
@@ -392,14 +426,15 @@ button {
 .item-button {
   display: flex;
   margin-right: 8px;
-  margin-top: 94px;
   margin-bottom: 50px;
   border: 1px solid transparent;
 
 }
 
 .list-button {
+  width: 1200px;
   justify-content: center;
+  padding: 0 15px;
 }
 
 
@@ -458,24 +493,23 @@ button {
   
 }
 
+/* PORTFOLIO */
+
 .main-portfolio {
   width: 1200px;
   padding-top: 94px;
   padding-bottom: 94px;
-  padding-left: 15px;
-  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.img-pfolio {
-  margin-right: 30px;
-}
-
 
 .list-portfolio {
+  width: 1200px;
+  padding: 0 15px;
   display: flex;
   flex-wrap: wrap;
+  
 }
 
 .item-portfolio {
@@ -498,6 +532,6 @@ button {
 }
 
 .menu-project {
-  width: 322px;
-  margin: 20px 24px;
+  width: 370px;
+  padding: 20px 24px;
 }
