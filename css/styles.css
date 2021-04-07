@@ -152,19 +152,23 @@ ul {
   color: var(--main-text-color);
 }
 
-.contact-nav .item-nav {
+.contact-nav .link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
 }
 
-.item-nav::before {
+.item-nav {
+  padding: 32px 0;
+}
+
+/*item-nav::before {
   width: 16px;
   height: 12px;
   content: "";
   background-image: url();
   margin-right: 10px;
-}
+}*/
 
 
 
@@ -179,8 +183,6 @@ ul {
 
 .list-nav a {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
 
   font-weight: 500;
   font-size: 14px;
@@ -451,7 +453,6 @@ button {
 .item-button {
   display: flex;
   margin-right: 8px;
-  margin-bottom: 50px;
   border-radius: 6px;
   box-shadow: 0 10px 10px -5px
   rgba(0,0,0,0.3);
@@ -525,7 +526,7 @@ button {
 
 .main-portfolio {
   width: 1200px;
-  padding-top: 94px 15px;
+  padding: 94px 15px;
   margin-left: auto;
   margin-right: auto;
 }
