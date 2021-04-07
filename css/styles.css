@@ -158,9 +158,6 @@ ul {
   padding-bottom: 32px;
 }
 
-.item-nav {
-  padding: 32px 0;
-}
 
 /*item-nav::before {
   width: 16px;
@@ -189,6 +186,7 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration-line: none;
+  padding: 32px 0;
   color: var(--title-color);
 }
 
@@ -525,15 +523,19 @@ button {
 /* PORTFOLIO */
 
 .main-portfolio {
-  width: 1200px;
-  padding: 94px 15px;
-  margin-left: auto;
-  margin-right: auto;
+  padding-top: 94px;
 }
 
 .list-button {
   justify-content: center;
 	margin-bottom: 50px;
+}
+
+.container-main {
+	width: 1200px;
+	padding: 0 15px;
+	margin-left: auto;
+	margin-right: auto
 }
 
 .list-portfolio {
