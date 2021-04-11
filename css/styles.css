@@ -389,7 +389,7 @@ ul {
 }
 /**/
 .welcom-list .icon-social-link {
-  background-color: #C4C4C4;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 .icon-social-item + .icon-social-item {
   margin-left: 10px;
