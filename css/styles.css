@@ -76,6 +76,40 @@ ul {
   color: var(--bg-color);
 }
 
+.email-link,
+.telephon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 0;
+
+}
+
+.email-link::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  background-image: url(../imeges/email.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+} 
+
+.telephon-link::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  background-image: url(../imeges/smartphone.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+
+
 .container {
   width: 1200px;
   margin-left:  auto;
@@ -349,9 +383,21 @@ ul {
   fill: var(--icon-color);
 
 }
-
+/*  */
+.icon.foot {
+  fill: var(--bg-color);
+}
+/**/
+.welcom-list .icon-social-link {
+  background-color: #C4C4C4;
+}
 .icon-social-item + .icon-social-item {
   margin-left: 10px;
+}
+
+.icon-social-link:focus,
+.icon-social-link:hover {
+  background-color: var(--accent-link-color);
 }
 
 .icon-social-link {
@@ -365,10 +411,54 @@ ul {
 
 }
 
-.icon-social-link:hover,
-.icon-social-link:focus {
+.icon-social-link:hover .icon,
+.icon-social-link:focus .icon {
+  fill: var(--bg-color);
+  /*background-color: var(--accent-link-color);*/
+}
+
+/*.icon-social-link:hover::before 
+.icon-social-link:focus::before {
   fill: #ffffff;
   background-color: #2196F3;
+
+}*/
+
+           /*    clients    */
+
+
+.section-clients {
+  display: flex;
+  background-color: yellow;
+}
+
+
+.regular-clients {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.regular-clients .icon-clients {
+  width: 170px;
+  margin-right: 30px;
+  fill: var(--icon-color);
+
+}
+.icon-clients {
+  width: 106px;
+  height: 60px;
+  border: 1px solid red;
+}
+
+.title-clients {
+  width: 390px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+.container.clients {
+  padding: 94px 0;
 }
 
 .main-title {
@@ -472,6 +562,12 @@ button {
 }
 /*footer*/
 
+.container .footer-list {
+  display: inline-block;
+  width: calc((100%-70px*3)/4);
+  background-color: rgb(136, 136, 108);
+}
+
 .footer-color {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -491,6 +587,10 @@ button {
   line-height: 1.71;
   font-style: normal;
   color: var(--bg-color);
+}
+
+.address {
+  margin-right: 70px;
 }
 
 .addres-footer {
@@ -516,8 +616,21 @@ button {
 }
 
 .footer-list {
-  display: block;
+  display: flex;
   
+}
+
+.welcom-list {
+  display: block;
+  width: 206px;
+}
+
+.welcom-page {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+  color: var(--bg-color);
 }
 
 /* PORTFOLIO */
