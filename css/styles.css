@@ -97,6 +97,7 @@ ul {
 
 } 
 
+
 .telephon-link::before {
   content: "";
   display: inline-block;
@@ -318,10 +319,7 @@ ul {
   font-size: 14px;
 	line-height: 1.71;
 	letter-spacing: 0.03em;
-  padding-top: 94px;
-  padding-bottom: 94px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding: 94px 15px;
   color: var(--main-text-color);
 
 } 
@@ -414,41 +412,9 @@ ul {
 .icon-social-link:hover .icon,
 .icon-social-link:focus .icon {
   fill: var(--bg-color);
-  /*background-color: var(--accent-link-color);*/
 }
-
-/*.icon-social-link:hover::before 
-.icon-social-link:focus::before {
-  fill: #ffffff;
-  background-color: #2196F3;
-
-}*/
 
            /*    clients    */
-
-
-.section-clients {
-  display: flex;
-  background-color: yellow;
-}
-
-
-.regular-clients {
-  display: flex;
-  flex-wrap: nowrap;
-}
-
-.regular-clients .icon-clients {
-  width: 170px;
-  margin-right: 30px;
-  fill: var(--icon-color);
-
-}
-.icon-clients {
-  width: 106px;
-  height: 60px;
-  border: 1px solid red;
-}
 
 .title-clients {
   width: 390px;
@@ -457,9 +423,43 @@ ul {
   margin-bottom: 50px;
 }
 
-.container.clients {
-  padding: 94px 0;
+.icon-clients {
+  width: 170px;
+  margin-right: 30px;
+  border: 2px solid var(--icon-color);
+  border-radius: 4px;
 }
+
+.icon-clients:hover,
+.icon-clients:focus {
+  border: 2px solid var(--accent-link-color);
+}
+
+
+.icon-client {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 106px;
+  height: 60px;
+  margin: 16px 32px;
+  fill: var(--icon-color);
+
+}
+
+.icon-clients:hover .icon-client,
+.icon-clients:focus .icon-client {
+  fill: var(--accent-link-color);
+
+}
+
+.section-clients {
+  display: flex;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  
+}
+
 
 .main-title {
   margin-bottom: 10px;
@@ -637,6 +637,7 @@ button {
 
 .main-portfolio {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .list-button {
@@ -662,6 +663,14 @@ button {
   margin-bottom: 30px;
   border: 1px solid #eee;
 }
+
+.item-portfolio:hover,
+.item-portfolio:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+   0px 4px 4px rgba(0, 0, 0, 0.06), 
+   1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 
 .item-portfolio:last-child {
   margin-right: 0%;
