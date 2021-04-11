@@ -542,9 +542,14 @@ button {
   display: flex;
   margin-right: 8px;
   border-radius: 6px;
-  box-shadow: 0 10px 10px -5px
-  rgba(0,0,0,0.3);
+ 
   border: 1px solid transparent;
+}
+
+.item-button:hover,
+.item-button:focus {
+   box-shadow: 0 10px 10px -5px
+  rgba(0,0,0,0.3);
 }
 
 
