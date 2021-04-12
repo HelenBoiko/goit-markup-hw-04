@@ -560,6 +560,8 @@ button {
 .item-button:focus {
    box-shadow: 0 10px 10px -5px
   rgba(0,0,0,0.3);
+  
+  border: 1px solid var(--accent-link-color);
 }
 
 
