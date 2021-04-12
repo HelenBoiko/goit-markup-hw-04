@@ -88,26 +88,36 @@ ul {
 .email-link::before {
   content: "";
   display: inline-block;
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  background-image: url(../imeges/email.svg);
   background-repeat: no-repeat;
   background-size: contain;
-
 } 
+
+.icon-email {
+  color: currentColor;
+  margin-right: 10px;
+
+}
 
 
 .telephon-link::before {
   content: "";
   display: inline-block;
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-  background-image: url(../imeges/smartphone.svg);
   background-repeat: no-repeat;
   background-size: contain;
+}
 
+.icon-telephone {
+  color: currentColor;
+  margin-right: 10px;
+}
+
+.email-link:hover,
+.telephon-link:hover{
+  fill: var(--accent-link-color);
+}
+.email-link:focus,
+.telephon-link:focus {
+  fill: var(--accent-link-color);
 }
 
 
