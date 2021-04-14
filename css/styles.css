@@ -455,10 +455,6 @@ ul {
 }
 
 
-.icon-client {
-  
-}
-
 .icon-clients:hover .icon-client,
 .icon-clients:focus .icon-client {
   fill: var(--accent-link-color);
