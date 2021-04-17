@@ -438,15 +438,13 @@ ul {
   width: 170px;
   height: 90px;
   fill: var(--icon-color);
-
+  border: 2px solid var(--icon-color);;
   border-radius: 4px;
 }
 
 .icon-clients {
   width: 170px;
-  margin-right: 30px;
-  border: 2px solid var(--icon-color);
-  border-radius: 4px;
+  margin-right: 30px; 
 }
 
 .icon-regular-clients:hover,
@@ -455,8 +453,8 @@ ul {
 }
 
 
-.icon-clients:hover .icon-client,
-.icon-clients:focus .icon-client {
+.icon-regular-clients:hover .icon-client,
+.icon-regular-clients:focus .icon-client {
   fill: var(--accent-link-color);
 
 }
@@ -689,9 +687,14 @@ button {
   border: 1px solid #eee;
 }
 
-.item-portfolio:hover,
-.item-portfolio:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+.icon-portfolio {
+  display: block;
+  text-decoration: none;
+}
+
+.icon-portfolio:hover,
+.icon-portfolio:focus {
+   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
    0px 4px 4px rgba(0, 0, 0, 0.06), 
    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -703,12 +706,9 @@ button {
 
 .item-portfolio:nth-child(3n) {
   margin-right: 0%;
+
 }
 
-.item-portfolio:nth-last-child(-n + 3)
-{
-  margin-bottom: 0%;
-}
 
 .menu-project {
   width: 370px;
